@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(189,189,189);
-    background: linear-gradient(130deg, rgba(189,189,189,1) 0%, rgba(160,216,232,1) 100%);
+background: linear-gradient(130deg, rgba(189,189,189,1) 0%, rgba(160,216,232,1) 100%);
 }
 
 header {
@@ -14,7 +14,17 @@ header {
     padding: 1em;
 }
 
-.area, section {
+.area {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #45559b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;     
+    width: 100%;
+    height: 300px;}
+
+section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -23,21 +33,26 @@ header {
     border-radius: 5px; 
 }
 
-h1, h2, h3 {
-    color: #ffffff;
+h1 {color: white;
+    font-style: italic;
+    font-family: 'Courier';
     font-size: xx-large;
+
 }
 
-#a, #b, #tube, #insta, #texto-copiavel, #email, #i, #p, #cc {
-    font-weight: lighter;
-    font-size: larger;
-    color: rgb(220, 237, 255);
-    display: flex;
+h2, h3 {
+    color: #ffffff; font-size: xx-large;
 }
+
+
+#a {font-weight:lighter; font-size: larger; color:rgb(220, 237, 255)}
+
+#b {font-weight:lighter; font-size: larger; color:rgb(220, 237, 255)}
 
 .project {
     margin-bottom: 20px;
 }
+
 
 footer {
     background-color: #333;
@@ -48,34 +63,66 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-@media (max-width: 767px) {
-    /* Estilos específicos para telas menores, como smartphones */
-    .area, section {
-        width: 90%; /* Adapta a largura para ocupar 90% da tela */
-    }
-
-    #tube, #insta {
-        right: 10px; /* Ajusta a posição dos ícones para a direita */
-    }
-
-    #insta {
-        right: 10px; /* Ajusta a posição do ícone do Instagram */
-    }
-
-    #email {
-        left: 10px; /* Ajusta a posição do texto de e-mail */
-    }
-
-    #i {
-        left: 10px; /* Ajusta a posição do ícone "i" */
-    }
-
-    #p {
-        left: 10px; /* Ajusta a posição do ícone "p" */
-    }
-
-    #cc {
-        left: 10px; /* Ajusta a posição do ícone "cc" */
-    }
+#tube {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
 }
+
+#insta {
+    position: absolute;
+    top: 10px;
+    right: 85px;
+    display: flex;
+}
+
+#texto-copiavel {
+    color: white; 
+    font-style: italic; 
+    font-family: 'Arial';
+    font-size: larger;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+}
+
+#email {
+    color: white; 
+    font-style: italic; 
+    font-family: 'Arial';
+    font-size: larger;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    display: flex;
+}
+
+#i {
+    position: absolute;
+    left: 485px;
+    display: flex;
+}
+
+#p {
+    position: absolute;
+    left: 275px;
+    display: flex;
+}
+
+#cc {
+    position: absolute;
+    left: 685px;
+    display: flex;
+}
+
+#v {width: 800px ;}
+
+#w {width: 800px ;}
+
+#x {width: 800px ;}
+
+#y {width: 800px ;}
+
+#z {width: 800px ;}
