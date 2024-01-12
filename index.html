@@ -5,35 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio GR</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./webfest/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./webfest/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./webfest/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 </head>
 
 <script>
     function copiarTexto() {
-        /* Seleciona o elemento de texto */
         var elementoDeTexto = document.getElementById("texto-copiavel");
-
-        /* Seleciona o conteúdo do elemento de texto */
         var selecao = window.getSelection();
         var intervalo = document.createRange();
         intervalo.selectNodeContents(elementoDeTexto);
         selecao.removeAllRanges();
         selecao.addRange(intervalo);
-
-        /* Copia o texto para a área de transferência */
         document.execCommand("copy");
-
-        /* Limpa a seleção */
         selecao.removeAllRanges();
-
-        /* Mensagem de feedback (opcional) */
         alert("Email Copiado");
     }
 </script>
     
         <p id="texto-copiavel">Contato:</p><p id="email" onclick="copiarTexto()">guilherminn16@gmail.com</p>
     
-    
-
 <body>
 
     <header>
@@ -79,10 +72,5 @@
             <img src="./images/WhatsApp Image 2024-01-10 at 08.52.20 (1).jpeg" width="800">
         </div>
     </section>
-
-    <footer>
-        &copy; Guilherminn 2024
-    </footer>
-
 </body>
 </html>
