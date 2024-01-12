@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -114,4 +115,85 @@ footer {
     position: absolute;
     left: 685px;
     display: flex;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(189,189,189);
+    background: linear-gradient(130deg, rgba(189,189,189,1) 0%, rgba(160,216,232,1) 100%);
+}
+
+header {
+    background-color: #45559b;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.area, section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #45559b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    font-size: xx-large;
+}
+
+#a, #b, #tube, #insta, #texto-copiavel, #email, #i, #p, #cc {
+    font-weight: lighter;
+    font-size: larger;
+    color: rgb(220, 237, 255);
+    display: flex;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    /* Estilos específicos para telas menores, como smartphones */
+    .area, section {
+        width: 90%; /* Adapta a largura para ocupar 90% da tela */
+    }
+
+    #tube, #insta {
+        right: 10px; /* Ajusta a posição dos ícones para a direita */
+    }
+
+    #insta {
+        right: 10px; /* Ajusta a posição do ícone do Instagram */
+    }
+
+    #email {
+        left: 10px; /* Ajusta a posição do texto de e-mail */
+    }
+
+    #i {
+        left: 10px; /* Ajusta a posição do ícone "i" */
+    }
+
+    #p {
+        left: 10px; /* Ajusta a posição do ícone "p" */
+    }
+
+    #cc {
+        left: 10px; /* Ajusta a posição do ícone "cc" */
+    }
 }
